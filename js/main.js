@@ -30,8 +30,12 @@ function realizarViaje(energiaAstronauta, energiaRobot) {
             }
             console.log("La energía del Astronauta baja a " + energiaAstronauta);
         }
-    }
-    return {energiaAstronauta, energiaRobot};
+const respuestaUsuario = prompt("Deseas continuar con el próximo Viaje Espacial? (Si/No)");
+if (respuestaUsuario && respuestaUsuario.toLowerCase() !== "si") {
+    break;
+        }
+} 
+return {energiaAstronauta, energiaRobot}; 
 }
 
 
